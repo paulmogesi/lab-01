@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="paulnyagah.com.mogesi.LoginActivity"
+    tools:showIn="@layout/activity_login">
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint ="Username" />
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint ="@string/txtpassword"/>
+
+   <Button
+       android:layout_width="match_parent"
+       android:text ="Login"
+       android:id="@+id/Login"
+       android:layout_height="wrap_content"
+       android:background="@color/themered"/>
+
+    <android.support.v7.widget.AppCompatCheckedTextView
+        android:layout_width="match_parent"
+        android:text="Dont have an account? Signup"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:background="@color/material_indigo_500"
+        android:id="@+id/Create_account"
+        android:onClick="Create_account"/>
+
+
+</LinearLayout>
